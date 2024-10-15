@@ -30,7 +30,7 @@ export const FileView: React.FC<{
   if (['png', 'svg', 'bmp', 'jpeg', 'gif', 'jpg', 'webp', 'ico'].includes(fileType)) {
     viewerEl = <Image preview={false} src={fileUrl}/>;
   } else if (['txt', 'js', 'json', 'java', 'css', 'sh',
-    'html',
+    'html', 'org',
     'ejs', 'ts', 'tsx'].includes(fileType)) {
     viewerEl = <TextViewer fileUrl={fileUrl}/>;
   } else if (['md'].includes(fileType)) {
